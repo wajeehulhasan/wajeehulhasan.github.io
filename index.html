@@ -7,106 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    pkr: <input type="number" id="num1">
-    <br>
-    <br>
-    usd: <input type="number" id="num2">
-    <button onclick="Convert()">Do pkr to usd</button>
-    <button onclick="Convertt()">Do usd to pkr</button>
-    <h1 id="result"></h1>
+    <script>
 
-    
-    Num: <input type="number" id="num1">
-    <br>
-    <br>
-    <button onclick="wear()">press</button>
- <h1 id="result"></h1>
-
- <h1>Marksheet</h1>
- Marks: <input type="number" id="num1">
- <br>
- <button onclick="Sheet()"></button> 
- <h1 id="result"></h1>
- <script>
- function Sheet(){
-     let mk = document.getElementById("num1").value
- // let mk = Number(m)
-     if(mk > 89 || mk == 100)
- {
-  document.getElementById("result").innerText = "Your grade is A+"
- }
- else if(mk > 79 || mk == 89)
- {
-  document.getElementById("result").innerText = "Your grade is A1"
- }
- else if(mk > 69 || mk == 79)
- {
-  document.getElementById("result").innerText = "Your grade is A"
- }
- else if(mk > 59 || mk == 69)
- {
-  document.getElementById("result").innerText = "Your grade is B"
- }
- else if(mk > 49 || mk == 59)
- {
-  document.getElementById("result").innerText = "Your grade is C"
- }
- else if(mk > 39 || mk == 49)
- {
-  document.getElementById("result").innerText = "Your grade is D"
- }
- else{
-     document.getElementById("result").innerText= "Fail"
- }
- 
- }
- 
- </script>
- 
- 
-
+        var x,y,chr;
+        for(x=1; x <=6; x++)
+        {
+           for (y=1; y < x; y++)
+             {
+            chr=chr+("*");        
+              }
+         console.log(chr);
+          chr='';    
+        }
+        
+        
+        
+            </script>
 </body>
-
-<script>
-function Convert(){
-let pkr = document.getElementById("num1").value
-let result = Number (pkr) / 170.4
-document.getElementById("result").innerText = result
-}
-function Convertt(){
-let pkr = document.getElementById("num2").value
-let result = Number (pkr) * 170.4
-document.getElementById("result").innerText = result
-}
-
-
-</script>
-
-<script>
-    function wear(){
- let temp = document.getElementById("num1").value
- if(Number (temp) === 25)
- {
- document.getElementById("result").innerText = "Don't carry jacket" 
- 
-}
- else if(Number (temp) < 25 && Number (temp) > 15){
-    document.getElementById("result").innerText = "Carry jacket" 
- }
- else if(Number (temp) <= 15 && Number (temp) >= 1 ){
-    document.getElementById("result").innerText = "Carry coat" 
- }
-else if(Number (temp) <= 0){
-    document.getElementById("result").innerText = "Don't go out" 
-}
-
-
-
-    }
-</script>
-
-
-
-
-
 </html>
